@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro programa</title>
+
+    <style>
+        body{
+          background: 
+          linear-gradient(90deg, #242424, #4d4d4d 50%, #a3a3a3 81.25%);
+        }
+
+        .container{
+          display: flex;
+        }
+
+        h1{
+          background-color: rgba(255, 255, 255, 0.788);
+          border-radius: 10px;
+        }
+
+        /* div.container p{          
+          position: absolute;
+          margin: 0;
+          margin-right: -50%;
+          transform: translate(-50%,-50%);
+          left: 50%;
+          top: 50%;
+          font-size: 100px;
+          color: rgba(255, 190, 106, 0.671);
+
+        } */
+
+        div.container img{          
+            position: absolute;
+            margin: 0;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 43%;
+            width: 25%;
+            height: 65%;
+
+        }
+
+        button{
+          position: absolute;
+          margin: 0;
+          margin-right: -50%;
+          transform: translate(-50%,-50%);
+          left: 50%;
+          top: 80%;
+          font-size: 50px;
+          border-radius: 20px;
+          background-color: rgba(255, 255, 255, 0.788);
+          color: rgba(0, 0, 0, 0.836);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+      <h1 style="color: rgb(0, 0, 0);">Programa de alterar:</h1>
+        <!-- poderia ser feito com o "p" ao invés da img. -->
+        <!-- <p id="meuId"><b>Conteúdo inicial</b></p> -->
+         <img id="imgId" src="personagem1.png" alt="personagem">
+
+         <!-- E ao invés do src pode ser innerHTML para alterar o texto: -->
+        <!-- <button type="button" onclick='document.getElementById("meuId").innerHTML="<b>Alterei o texto</b>"'><b>Clique aqui</b></button> -->
+        <button type="button" onclick='document.getElementById("imgId").src="./personagem2.png"'><b>Click the button here!</b></button>
+    </div>
+
+</body>
+</html>

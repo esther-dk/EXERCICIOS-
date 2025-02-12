@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oitavo programa</title>
+
+    <style>
+        body{
+            background: 
+                linear-gradient(90deg, green, salmon)
+            ;
+        }
+        
+        .container{
+            display: flex;
+        }
+
+        div.container p{
+            background-image: url("https://i.pinimg.com/736x/94/9a/47/949a47c254fbe113257b29d2c50d8720.jpg");
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: absolute;
+            margin: 0;
+            margin-right: -50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p id="meuId"></p>
+    </div>
+   
+
+    <script>
+        //não precisava usar o var para adicionar o nome, poderia ser declarado diretamente no document: "document.getElementById("meuId").innerHTML = "esther";".
+        var nome = "Esther"; 
+
+        document.getElementById("meuId").innerHTML = nome;
+    </script>
+</body>
+</html>

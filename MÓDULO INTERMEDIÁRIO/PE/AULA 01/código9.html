@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nono programa</title>
+</head>
+<body>
+    <input id="meuId1" type="text" placeholder="digite aqui" value="">
+    <button type="button" onclick="minhaFuncao()">clique aqui</button>
+     <p id="meuId2"></p>
+    <script>
+        function minhaFuncao(){
+            var x = document.getElementById("meuId1").value;
+
+            document.getElementById("meuId2").innerHTML= x;
+        }
+
+
+    </script>
+</body>
+</html>

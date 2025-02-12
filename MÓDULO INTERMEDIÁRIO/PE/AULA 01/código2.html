@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo programa</title>
+    <style>
+
+        body {
+            background: 
+            linear-gradient(90deg, #2c1e0dea , #3f372dea 50%, #573b2fd8 81.25%);
+        }
+
+        .container {
+            display: flex;
+    
+            
+        }
+
+
+        img {
+            position: absolute;
+            margin: 0;
+            margin-right: -50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px rgb(255, 255, 255) solid;
+            border-radius: 30px;
+            width: 20%;
+
+        }
+
+        .btn1 {
+            position: absolute;
+            margin: 0;
+            margin-right: -50%;
+            top: 85%;
+            left: 58%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            color: rgba(240, 248, 255, 0.767);
+            background: 
+            linear-gradient(90deg, #2c1e0dea , #3f372dea 50%, #573b2fd8 81.25%);
+            font-size: 2vw;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-style: none;
+            width: 10vw;
+        }
+
+
+        .btn2 {
+            position: absolute;
+            margin: 0;
+            margin-right: -50%;
+            top: 85%;
+            left: 43%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            background: 
+            linear-gradient(90deg, #2c1e0dea , #3f372dea 50%, #573b2fd8 81.25%);
+            color: rgba(240, 248, 255, 0.836);
+            font-size: 2vw;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-style: none;
+            width: 10vw;
+
+        }
+
+        @media only screen and (max-width: 1000px) {
+            img {
+                width: 33vw;
+            }
+
+            .btn1{
+                
+                font-size: 2.5vw;
+                top: 75%;
+                left: 33%;
+                width: 15vw;
+            }
+
+            .btn2{
+                font-size: 2.5vw;
+                top: 75%;
+                left: 70%;
+                width: 14vw;
+
+            }
+        }
+
+ 
+    </style>
+</head>
+
+<body>
+
+
+
+    <div id="container">
+        <img id="idImg" src="./porta1.png"
+            alt="Janela">
+
+        <button class="btn1" type="button"
+            onclick='document.getElementById("idImg").src="./porta1.png"'>
+           <b>Fechar a Janela</b> 
+        </button>
+     
+
+        <button class="btn2" type="button"
+            onclick='document.getElementById("idImg").src="./porta2.png"'>
+           <b>Abrir a Janela</b> 
+        </button>
+
+    </div>
+
+
+</body>
+
+</html>

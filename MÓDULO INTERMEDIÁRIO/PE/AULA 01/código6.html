@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sexto programa</title>
+
+    <style>
+        body {
+            background:
+                linear-gradient(90deg, rgb(69, 45, 155), rgb(113, 115, 207) 50%, rgb(201, 206, 255) 81%);
+
+        }
+
+        .container{
+            display: flex;
+        }
+
+        h1 {
+            background: 
+                linear-gradient(90deg,rgb(69, 45, 155), rgb(49, 49, 128), rgb(201, 206, 255));  
+            border-radius: 10px;
+            border: 2px white dotted;
+        }
+
+        p {
+            position: absolute;
+            margin: 0;
+            margin-right: -50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 100px;
+            color: white;
+            background:
+                linear-gradient(90deg, rgb(69, 45, 155), rgb(141, 142, 240), rgb(201, 206, 255));
+            border-radius: 20px;
+            border: 2px white dotted;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 style="color: white;">Programa de exibir o resultado da soma:</h1>
+        <p id="meuId">Conteúdo inicial</p>
+    </div>
+    <script>
+
+        //teria essa forma de fazer, porém é muito redundante:
+        // var x = 10;
+        // var y = 20;
+        // var z = x + y;
+
+        //mas essa forma é a mais eficente:
+        var x, y, z;
+
+        x = 10;
+        y = 20;
+        z = x + y;
+
+        //ao invés de ser um número poderia ser um nome; a ideia é a mesma:
+        // var nome = "Marcel";
+        // document.getElementById("meuId").innerHTML = nome;
+        document.getElementById("meuId").innerHTML = x + "+" + y + "= " + z; // o + é para concatenar, ou seja, juntar as variáveis e a string "+" e "=".
+    </script>
+</body>
+
+</html>

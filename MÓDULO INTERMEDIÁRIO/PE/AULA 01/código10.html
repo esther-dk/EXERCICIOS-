@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Décimo programa</title>
+ </head>
+ <body>
+    
+    <input id="meunamber1" type="number" placeholder="digite aqui" value="">
+    <input id="meunamber2"  type="number" placeholder="digite aqui" value="">
+    <button type="button" onclick="minhaFuncao()">clique aqui</button>
+    <p id="meuId"></p>
+    <script>
+        function minhaFuncao(){
+            var x = Number(document.getElementById("meunamber1").value);
+            var y = Number(document.getElementById("meunamber2").value);
+            
+            var resultado = x + y;
+
+            document.getElementById("meuId").innerHTML = x + "+" + y + "=" + resultado;
+        }
+    </script>
+ </body>
+ </html>

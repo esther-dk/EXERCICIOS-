@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro programa</title>
+    <style>
+
+        body {
+            background-color: rgba(0, 61, 61, 0.377);
+        }
+
+        .container {
+            display: flex;
+        }
+        
+        div.container h1 {
+        background-image: url('https://i.pinimg.com/736x/df/d9/b4/dfd9b4a277960fa685024662f8a17958.jpg');
+        -webkit-text-fill-color: transparent;
+         background-clip: text;
+         margin: 0;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         margin-right: -50%;
+         transform: translate(-50%,-50%);
+         font-size: 100px;
+
+         @media screen and (max-width: 300px){
+            font-size: 50px;
+
+     }
+    }
+    </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Hello World!</h1>
+  </div>
+     
+  
+    
+</body>
+</html>

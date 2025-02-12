@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceiro programa</title>
+    <style>
+        body {
+            background: 
+            linear-gradient(90deg, #72a4e6, #96cafa 50%, #addeff 81.25%);
+        }
+
+        .container {
+            display: flex;
+        }
+
+        h1{
+            background: 
+            linear-gradient(90deg, #72a4e6, #96cafa 50%, #addeff 81.25%);
+            border-radius: 10px;
+        }
+
+        /* div.container p {
+            position: absolute;
+            margin: 0;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            font-size: 10vw;
+            color: rgb(121, 170, 125);
+
+        } */
+
+        div.container img {
+            position: absolute;
+            margin: 0;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            left: 49%;
+            top: 42%;
+            width: 25%;
+            height: 69%;
+        } 
+
+
+
+        .btn1 {
+            position: absolute;
+            margin: 0;
+            margin-right: -50%;
+            top: 78%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            border-style: none;
+            border-radius: 10px;
+            color: aliceblue;
+            background: 
+            linear-gradient(90deg, #72a4e6, #74a9da 50%, #addeff 81.25%);
+            font-size: 2.5vw;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+
+        .btn2 {
+            position: absolute;
+            margin: 0;
+            margin-right: -50%;
+            top: 78%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            border-style: none;
+            border-radius: 10px;
+            background: 
+            linear-gradient(90deg, #72a4e6, #74a9da 50%, #addeff 81.25%);
+            color: aliceblue;
+            font-size: 2.5vw;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+
+        @media only screen and (max-width: 1000px) {
+
+      
+            /* div.container p {
+                font-size: 10vw;
+            } */
+
+            div.container img{
+                width: 45vw;
+                height: 50vw;
+            }
+
+            .btn1 {
+
+                font-size: 4vw;
+                top: 70%;
+                left: 38%;
+                width: 15vw;
+            }
+
+            .btn2 {
+                font-size: 4vw;
+                top: 70%;
+                left: 65%;
+                width: 15vw;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 style="color: white;">Programa de exibir e esconder:</h1>
+        <!-- poderia ser feito com o texto como mostrada no texto trecho abaixo: -->
+        <!-- <p id="meuId" style="display: none;">Hello, guys??</p> -->
+         <img id="imgId" style="display:none;" src="personagem3.png" alt="personagem">
+        <button class="btn1" type="button" onclick='document.getElementById("imgId").style="display:block"'>Display text</button>
+        <button class="btn2" type="button" onclick='document.getElementById("imgId").style="display:none"'>Conceal text</button>
+    </div>
+
+    
+</body>
+</html>

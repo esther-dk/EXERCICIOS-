@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinto programa</title>
+
+    <style>
+        body {
+            background:
+                linear-gradient(90deg, #001325, #0e71d4 50%, #4fa5fa 81.25%);
+
+        }
+
+        h1,
+        h3 {
+            color: rgba(255, 255, 255, 0.753);
+            font-family: Cambria, Cochin, Georgia, serif;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        div.container img {
+            position: absolute;
+            margin: 0;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            width: 45%;
+            height: 89%;
+        }
+
+        .btn1 {
+            border-style: none;
+            background-color: #1e8fff00;
+            position: absolute;
+            margin: 0;
+            margin-right: -50%;
+            top: 30%;
+            left: 95%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+
+        }
+
+
+        .btn2 {
+            border-style: none;
+            background-color: #1e8fff00;
+            position: absolute;
+            margin: 0;
+            margin-right: -50%;
+            top: 50%;
+            left: 95%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+
+        }
+
+
+        .btn3 {
+            border-style: none;
+            background-color: #1e8fff00;
+            position: absolute;
+            margin: 0;
+            margin-right: -50%;
+            top: 70%;
+            left: 95%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Quinto programa:</h1>
+    <h3>- Clique nas imagens no canto direito!</h3>
+
+    <!-- Ao invés de uma imagem poderia ser um texto: -->
+    <!-- <p id='text1'>Conteúdo inicial</p>
+        <button type='button' onclick='exibirText1()'>Clique aqui 1</button>
+        <button type='button' onclick='exibirText2()'>Clique aqui 2</button> -->
+
+    <div class="container">
+        <img id="img1" src="./foto3.png" alt="imagem">
+        <button class="btn1" type="button" onclick="exibirImg1()">
+            <img src="foto3.png" alt="imagem" style="width: 90px; height: 90px;">
+        </button>
+        <button class="btn2" type="button" onclick="exibirImg2()">
+            <img src="foto4.png" alt="" style="width: 90px; height: 90px;">
+        </button>
+        <button class="btn3" type="button" onclick="exibirImg3()">
+            <img src="foto5.png" alt="" style="width: 90px; height: 90px;">
+        </button>
+    </div>
+
+    <!-- 
+    O script poderia está externo colocando o caminho do arquivo no src do script.
+    <script src=""></script> e dentro estaria o nome do arquivo com o .js.-->
+
+
+    <script>
+        function exibirImg1() {
+            document.getElementById("img1").src = "./foto3.png"
+            document.body.style.background = "linear-gradient( 90deg, #001325, #0e71d4 50%, #4fa5fa 81.25%)"
+
+        }
+
+
+        function exibirImg2() {
+            document.getElementById("img1").src = "./foto4.png"
+            document.body.style.background = "linear-gradient(90deg, #5c0000, #940101 50%, #e06464 81.25%)"
+
+        }
+
+        function exibirImg3() {
+            document.getElementById("img1").src = "./foto5.png"
+            document.body.style.background = "linear-gradient(90deg, #005c2e, #00b12c 50%, #6ad46f 81.25%)"
+
+        }
+
+
+        function exibirText1() {
+            document.getElementById("text1").innerHTML = "Alterei o conteúdo 1";
+
+        }
+
+        function exibirText2() {
+
+            document.getElementById("text1").innerHTML = "Alterei o conteúdo 2";
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

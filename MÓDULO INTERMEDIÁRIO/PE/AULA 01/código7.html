@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+          body{
+          background: 
+          linear-gradient(90deg, #242424, #4d4d4d 50%, #a3a3a3 81.25%);
+        }
+
+        .container{
+          display: flex;
+        }   
+
+        div.container #meuId1{          
+            position: absolute;
+            margin: 0;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            font-size: 50px;
+            color: white;
+
+        }
+
+        div.container #meuId2{          
+            position: absolute;
+            margin: 0;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 60%;
+            font-size: 30px;
+            color: white;
+
+        }
+
+
+         button{
+          position: absolute;
+          margin: 0;
+          margin-right: -50%;
+          transform: translate(-50%,-50%);
+          left: 50%;
+          top: 80%;
+          font-size: 50px;
+          border-radius: 20px;
+          background-color: rgba(0, 0, 0, 0.329);
+          color: white;
+          border-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button type="button" onclick="exibirText()">clique aqui</button>
+
+        <p id="meuId1"></p>
+        <p id="meuId2"></p>
+    </div>
+  
+    <script>
+        function exibirText(){
+            document.getElementById("meuId1").innerHTML = "<b>Albert Einstein:<b>";
+            document.getElementById("meuId2").innerHTML = "Aprenda com o ontem. Viva para o hoje. Tenha espença com o amanhã.";
+        }
+    </script>
+</body>
+</html>
